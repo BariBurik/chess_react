@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.board {
+  width: calc(64px * 8);
+  height: calc(64px * 8);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cell {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.cell img {
+  max-width: 48px;
+  max-height: 48px;
+  position: relative;
+  user-select: none;
+}
+
+.black {
+  background-color: deepskyblue;
+}
+
+.white {
+  background-color: rgb(240, 212, 159);
+}
+
+.selected {
+  background-color: brown;
+}
+
+.avaliable {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: green;
+}
+
+.lost {
+  height: calc(50vh - 60px);
+  padding: 30px;
+  margin-left: 50px;
+  background-color: lightgray;
+}
